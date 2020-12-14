@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --font-primary: 'Alata', sans-serif;
-    --font-secondary: 'Nunito', sans-serif;
+    --font-primary: 'Space Mono', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
     --primary: 	#492971;
     --secondary: #ff5b6c;
     --light: #9d306b;

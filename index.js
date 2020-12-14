@@ -152,13 +152,13 @@ libraryOne = [
 
     {
         sound: oneK,
-        name: 'A#m7 Chord',
+        name: 'CLAP',
         key: 'K'
     },
     
     {
         sound: oneL,
-        name: 'Fm7 Chord',
+        name: 'CLAAAANG',
         key: 'L'
     }
 
@@ -167,14 +167,14 @@ libraryOne = [
 
 //library two
 twoA = new sound('./sounds/library2/jc_wtr_synth__Dmaj9.wav');
-twoS = new sound('./sounds/library2/jc_wtr_fx_crystals.wav');
-twoD = new sound('./sounds/library2/jc_wtr_synth__Emin7.wav');
+twoS = new sound('./sounds/library2/jc_wtr_synth__Emin7.wav');
+twoD = new sound('./sounds/library2/jc_wtr_fx_crystals.wav');
 twoF = new sound('./sounds/library2/jc_wtr_kick_synth.wav');
 twoG = new sound('./sounds/library2/jc_wtr_snare_808ish.wav');
 twoH = new sound('./sounds/library2/jc_wtr_snare_win.wav');
 twoJ = new sound('./sounds/library2/jc_wtr_hihat_clack.wav');
-twoK = new sound();
-twoL = new sound();
+twoK = new sound('./sounds/library2/jc_wtr_synth__Cmaj.wav');
+twoL = new sound('./sounds/library2/jc_wtr_synth__Eaug.wav');
 
 libraryTwo = [
     {
@@ -185,13 +185,13 @@ libraryTwo = [
 
     {
         sound: twoS,
-        name: 'PEWPEW',
+        name: 'Emin7 Chord',
         key: 'S'
     },
 
     {
         sound: twoD,
-        name: 'Emin7 Chord',
+        name: 'PEWPEW',
         key: 'D'
     },
 
@@ -221,13 +221,13 @@ libraryTwo = [
 
     {
         sound: twoK,
-        name: '',
+        name: 'Cmaj Chord',
         key: 'K'
     },
 
     {
         sound: twoL,
-        name: '',
+        name: 'Eaug Chord',
         key: 'L'
     }
 
@@ -243,8 +243,8 @@ threeF = new sound('./sounds/library3/MUNA_synth_lead_loop_arpeggio_hollow_detun
 threeG = new sound('./sounds/library3/MUNA_drum_one_shot_fat_pop_kick_performers.wav');
 threeH = new sound('./sounds/library3/MUNA_drum_one_shot_big_gated_snare_thrill.wav');
 threeJ = new sound('./sounds/library3/MUNA_drum_one_shot_live_hihat_open_parodies.wav');
-threeK = new sound();
-threeL = new sound();
+threeK = new sound('./sounds/library3/MUNA_song_starter_loop_ebow_120_Amaj.wav');
+threeL = new sound('./sounds/library3/MUNA_vocal_vocoder_aah_riff_verb_fans_flat_Emaj.wav');
 
 libraryThree = [
     {
@@ -291,13 +291,13 @@ libraryThree = [
 
     {
         sound: threeK,
-        name: '',
+        name: 'Amaj7 ebow',
         key: 'K'
     },
 
     {
         sound: threeL,
-        name: '',
+        name: 'Emaj7 vocoder',
         key: 'L'
     }
 
