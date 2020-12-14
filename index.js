@@ -44,6 +44,16 @@ const pressKeyHandler = (e) => {
             const filterJ = selectedLib.filter((pad) => pad.key === 'J');
             playSound(filterJ[0].sound, filterJ[0].name);
             break;
+        case 75:
+            classClick('K');
+            const filterK = selectedLib.filter((pad) => pad.key === 'K');
+            playSound(filterK[0].sound, filterK[0].name);
+            break;
+        case 76:
+            classClick('L');
+            const filterL = selectedLib.filter((pad) => pad.key === 'L');
+            playSound(filterL[0].sound, filterL[0].name);
+            break;
         case 49:
             selectedLib = libraryOne;
             createPads(libraryOne);
@@ -93,6 +103,9 @@ oneF = new sound('./sounds/library1/jc_ma_snare_one_shot_live_tape_sp16.wav');
 oneG = new sound('./sounds/library1/jc_ma_hat_closed_one_shot_tape_cut.wav');
 oneH = new sound('./sounds/library1/jc_ma_hat_open_one_shot_tape_blend.wav');
 oneJ = new sound('./sounds/library1/jc_ma_hat_closed_one_shot_tape_tardyflam.wav');
+oneK = new sound('./sounds/library1/jc_wtr_perc_hand.wav');
+oneL = new sound('./sounds/library1/jc_wtr_perc_rattle_hi.wav');
+
 
 libraryOne = [
     {
@@ -135,6 +148,18 @@ libraryOne = [
         sound: oneJ,
         name: 'TICKTAAAH',
         key: 'J'
+    },
+
+    {
+        sound: oneK,
+        name: 'A#m7 Chord',
+        key: 'K'
+    },
+    
+    {
+        sound: oneL,
+        name: 'Fm7 Chord',
+        key: 'L'
     }
 
 ]
@@ -148,6 +173,8 @@ twoF = new sound('./sounds/library2/jc_wtr_kick_synth.wav');
 twoG = new sound('./sounds/library2/jc_wtr_snare_808ish.wav');
 twoH = new sound('./sounds/library2/jc_wtr_snare_win.wav');
 twoJ = new sound('./sounds/library2/jc_wtr_hihat_clack.wav');
+twoK = new sound();
+twoL = new sound();
 
 libraryTwo = [
     {
@@ -158,7 +185,7 @@ libraryTwo = [
 
     {
         sound: twoS,
-        name: 'Crystals!',
+        name: 'PEWPEW',
         key: 'S'
     },
 
@@ -190,7 +217,20 @@ libraryTwo = [
         sound: twoJ,
         name: 'CLAAAACK',
         key: 'J'
+    },
+
+    {
+        sound: twoK,
+        name: '',
+        key: 'K'
+    },
+
+    {
+        sound: twoL,
+        name: '',
+        key: 'L'
     }
+
 
 ]
 
@@ -203,6 +243,8 @@ threeF = new sound('./sounds/library3/MUNA_synth_lead_loop_arpeggio_hollow_detun
 threeG = new sound('./sounds/library3/MUNA_drum_one_shot_fat_pop_kick_performers.wav');
 threeH = new sound('./sounds/library3/MUNA_drum_one_shot_big_gated_snare_thrill.wav');
 threeJ = new sound('./sounds/library3/MUNA_drum_one_shot_live_hihat_open_parodies.wav');
+threeK = new sound();
+threeL = new sound();
 
 libraryThree = [
     {
@@ -245,6 +287,18 @@ libraryThree = [
         sound: threeJ,
         name: 'SPLAAAASH',
         key: 'J'
+    },
+
+    {
+        sound: threeK,
+        name: '',
+        key: 'K'
+    },
+
+    {
+        sound: threeL,
+        name: '',
+        key: 'L'
     }
 
 ]
@@ -252,8 +306,8 @@ libraryThree = [
 //pad element generator
 function newPad(pad) {
     const { sound, name, key } = pad; //destructing provided pad object
-    this.newPad = document.getElementById('div'); //create div
-    this.newPad.classList.add("drum-pad"); //add the drum-pad class to it
+    this.newPad = document.createElement('div'); //create div
+    this.newPad.classList.add('drum-pad'); //add the drum-pad class to it
     this.newPad.setAttribute('id', key); //sets the id of the element to the pad object key
     this.newPad.setAttribute('type', 'button'); //sets the div type to button
     this.newPad.innerText = key; //render the key

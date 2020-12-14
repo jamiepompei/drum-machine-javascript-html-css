@@ -10,7 +10,7 @@
     --primary: 	#492971;
     --secondary: #ff5b6c;
     --light: #9d306b;
-    --dark: #ff5b6c;
+    --dark: #492971;
     --text: #521a4a;
 }
 
@@ -50,7 +50,7 @@
     padding: 1.5%;
     font-family: var(--font-primary);
     font-weight: bold;
-    color: var(--text);
+    color: #492971;
     text-align: center;
     margin: 10px;
     border-radius: 25%;
@@ -62,7 +62,7 @@
     background: var(--dark);
     color: var(--light);
     border: solid var(--secondary) 2px;
-    transform: translate(-3px);
+    transform: translateY(-3px);
     transition: all ease 0.5s;
     box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.5);
 }
@@ -78,7 +78,7 @@
 #beat-name{
     font-family: var(--font-primary);
     font-size: 75px;
-    color: var(--text);
+    color: salmon;
     text-align: center;
 }
 
