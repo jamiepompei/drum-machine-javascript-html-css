@@ -6,9 +6,9 @@ This drum machine was built with Javascript and utilized samples from Splice sam
 
 <strong>Features</strong>
 
-1.) Built with Javascript
-2.) Drum pads are generated dynamically per sound library.
-3.) Sound libraries each contain 9 sounds with a total of 27 samples available for jamming. Libraries can be toggled via button click or keyboard key press ('1', '2', '3').
-4.) Pads can be activated via button click or keyboad key.
+1.) Built with Javascript. <br>
+2.) Drum pads are generated dynamically per sound library.<br>
+3.) Sound libraries each contain 9 sounds with a total of 27 samples available for jamming. Libraries can be toggled via button click or keyboard key press ('1', '2', '3').<br>
+4.) Pads can be activated via button click or keyboad key.<br>
 
 
